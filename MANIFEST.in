@@ -1,7 +1,7 @@
-include README.rst
-include cms_named_menus/static/cmsnamedmenus/css/*
-include cms_named_menus/static/cmsnamedmenus/js/*
-exclude cms_named_menus/static/cmsnamedmenus/coffee/*
-exclude cms_named_menus/static/cmsnamedmenus/less/*
-include cms_named_menus/templates/cms_named_menus/*
-recursive-exclude *.pyc .bowerrc bower.json Gruntfile.coffee package.json node_modules
+include README.md
+
+recursive-include */static *
+recursive-include */templates *
+recursive-include */boilerplates *
+
+recursive-exclude *.pyc

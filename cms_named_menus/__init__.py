@@ -1,10 +1,3 @@
-try:
-    from django.apps import AppConfig
+# -*- coding:utf-8 -*-
 
-    class CMSNamedMenusConfig(AppConfig):
-        name = 'cms_named_menus'
-        verbose_name = "CMS Menus"
-
-    default_app_config = 'cms_named_menus.CMSNamedMenusConfig'
-except:
-    pass
+default_app_config = 'cms_named_menus.apps.CMSNamedMenusConfig'
